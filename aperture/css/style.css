@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
+body {
+  margin: 0;
+  background: #000000;
+  font-family: "Poppins", sans-serif;
+  color: #C0C0C0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
+}
+
+.header {
+  margin-top: 1rem;
+}
+.header .header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .header-flex .header-flex-logo {
+  cursor: pointer;
+}
+.header .header-flex .header-flex-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header-flex .header-flex-nav .header-flex-nav-ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2rem;
+}
+.header .header-flex .header-flex-nav .header-flex-nav-ul .header-flex-nav-ul-li {
+  margin: 0 1rem;
+}
+.header .header-flex .header-flex-nav .header-flex-nav-ul .header-flex-nav-ul-li .header-flex-nav-ul-li-a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  -webkit-transition: color, 0.5s;
+  transition: color, 0.5s;
+}
+.header .header-flex .header-flex-nav .header-flex-nav-ul .header-flex-nav-ul-li .header-flex-nav-ul-li-a:hover {
+  color: #C0C0C0;
+}
+.header .header-flex .header-flex-nav .header-flex-nav-button {
+  background: none;
+  border: none;
+}
+.header .header-flex .header-flex-nav .header-flex-nav-button .header-flex-nav-button-a {
+  background: #ffffff;
+  border: #ffffff 1px solid;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header .header-flex .header-flex-nav .header-flex-nav-button .header-flex-nav-button-a:hover {
+  background: none;
+  color: #ffffff;
+}
+.header .header-background {
+  background: url(../img/header/IMAGE.png) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-top: 1rem;
+}
+.header .header-background .header-container-background {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header .header-background .header-container-background .header-container-background-logo-text {
+  padding-top: 15rem;
+  text-align: center;
+  font-weight: 300;
+}
+.header .header-background .header-container-background .header-container-background-logo-text .header-container-background-logo-text-logo {
+  position: relative;
+  top: 30px;
+  font-weight: 300;
+}
+.header .header-background .header-container-background .header-container-background-logo-text .header-container-background-logo-text-title {
+  font-weight: 300;
+  font-size: 50px;
+}
+.header .header-background .header-container-background .header-background-flex-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  padding-top: 0.5rem;
+}
+.header .header-background .header-container-background .header-background-flex-icons .header-background-flex-icons-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5rem;
+  font-weight: 300;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.header .header-background .header-container-background .header-background-flex-icons .header-background-flex-icons-color .bx {
+  font-size: 1.5rem;
+}
+.header .header-background .header-container-background .header-background-flex-icons .header-background-flex-icons-color:hover {
+  color: #ffffff;
+}
+
+.main .main-block-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+.main .main-block-title .main-block-text {
+  font-size: 18px;
+}
+.main .main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main .main-block .mani-block-block {
+  margin: 12px 12px;
+}
+.main .main-block .mani-block-block .main-block-block-text {
+  font-weight: 300;
+  position: absolute;
+  margin: -270px 25px;
+}
+.main .main-block .mani-block-block .main-block-block-text .main-block-block-text-text {
+  width: 500px;
+}
+.main .main-block .mani-block-block .main-block-block-text .main-block-block-text-button {
+  margin-top: 15px;
+  background: none;
+  border: none;
+}
+.main .main-block .mani-block-block .main-block-block-text .main-block-block-text-button .bx {
+  cursor: pointer;
+  color: #000000;
+  font-size: 1.7rem;
+  position: absolute;
+  margin-top: -5px;
+}
+.main .main-block .mani-block-block .main-block-block-text .main-block-block-text-button .main-block-block-text-button-a {
+  background: #ffffff;
+  border: #ffffff 1px solid;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.main .main-block .mani-block-block .main-block-block-text .main-block-block-text-button .main-block-block-text-button-a:hover {
+  background: none;
+  color: #ffffff;
+}
+.main .main-background {
+  background: url("../img/main/IMAGE (5).png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.main .main-background .main-backgoround-block {
+  padding: 19rem 0rem;
+  text-align: left;
+}
+.main .main-background .main-backgoround-block .main-backgoround-block-text {
+  width: 400px;
+}
+.main .main-background .main-background-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  padding-top: 0.5rem;
+}
+.main .main-background .main-background-icons .main-background-icons-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5rem;
+  font-weight: 300;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.main .main-background .main-background-icons .main-background-icons-color:hover {
+  color: #ffffff;
+}
+.main .main-background .main-background-icons .main-background-icons-color .bx {
+  font-size: 1.5rem;
+}
+.main .main-background .main-background-icons .main-background-icons-color .bx:hover {
+  color: #ffffff;
+}
+.main .main-clients {
+  margin: 13rem 0;
+}
+.main .main-clients .main-clients-block {
+  text-align: center;
+}
+.main .main-clients .main-clients-block .main-clients-block-title {
+  font-size: 30px;
+}
+.main .main-clients .main-clients-flex {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main .main-about {
+  background: url("../img/main/IMAGE (7).png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.main .main-about .main-about-block {
+  padding: 16rem 0;
+  width: 500px;
+}
+.main .main-about .main-about-block .main-about-block-button {
+  background: none;
+  border: none;
+}
+.main .main-about .main-about-block .main-about-block-button .main-about-block-button-a {
+  background: #ffffff;
+  border: #ffffff 1px solid;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.main .main-about .main-about-block .main-about-block-button .main-about-block-button-a:hover {
+  background: none;
+  color: #ffffff;
+}
+.main .main-about .main-about-block .main-about-block-button .bx {
+  cursor: pointer;
+  color: #000000;
+  font-size: 1.7rem;
+  position: absolute;
+  margin-top: -5px;
+}
+.main .main-about .main-about-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  padding-top: 0.5rem;
+}
+.main .main-about .main-about-icons .main-about-icons-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5rem;
+  font-weight: 300;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.main .main-about .main-about-icons .main-about-icons-color:hover {
+  color: #ffffff;
+}
+.main .main-about .main-about-icons .main-about-icons-color .bx {
+  font-size: 1.5rem;
+}
+.main .main-about .main-about-icons .main-about-icons-color .bx:hover {
+  color: #ffffff;
+}
+.main .main-footer {
+  margin: 13rem 0;
+}
+.main .main-footer .main-footer-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main .main-footer .main-footer-container .main-footer-block {
+  text-align: center;
+}
+.main .main-footer .main-footer-container .main-footer-block .main-footer-block-title {
+  font-size: 30px;
+}
+.main .main-footer .main-footer-container .main-footer-button {
+  margin: 2rem 14.3rem;
+  background: none;
+  border: none;
+}
+.main .main-footer .main-footer-container .main-footer-button .main-footer-button-a {
+  background: #ffffff;
+  border: #ffffff 1px solid;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.main .main-footer .main-footer-container .main-footer-button .main-footer-button-a:hover {
+  background: none;
+  color: #ffffff;
+}
+.main .main-footer .main-footer-container .main-footer-button .bx {
+  cursor: pointer;
+  color: #000000;
+  font-size: 1.7rem;
+  position: absolute;
+  margin-top: -5px;
+}
+
+.footer .footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.footer .footer-flex .footer-block .footer-block-title {
+  padding: 0px 35px;
+}
+.footer .footer-flex .footer-block .footer-block-ul {
+  list-style: none;
+}
+.footer .footer-flex .footer-block .footer-block-ul .footer-block-ul-li {
+  font-weight: 300;
+  margin-top: 10px;
+}

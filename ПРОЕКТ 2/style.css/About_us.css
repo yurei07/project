@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #171718;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* container */
+
+.container {
+    max-width: 1155px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+    color: #fff;
+}
+
+.link__nav {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu {
+    display: none;
+    background: none;
+    border: none;
+}
+
+.line {
+    background-color: #26292D;
+    padding: 1px 0;
+    background-size: cover;
+}
+
+/* about_us */
+
+.about_us {
+    margin-top: 150px;
+}
+
+.about_us__block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about_us__title {
+    color: #fff;
+    width: 50%;
+}
+
+.about_us__email {
+    color: #5C62EC;
+    text-decoration: none;
+
+}
+
+/* hobby */
+
+.hobby {
+    margin-top: 150px;
+}
+
+.hobby__title {
+    color: #fff;
+    text-align: center;
+}
+
+.hobby__flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hobby__block {
+    color: #fff;
+    margin-top: 70px;
+    background-color: #1C1E22;
+    width: 300px;
+    height: 270px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.block__text {
+    width: 95%;
+}
+
+/* footer  */
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer__text {
+    margin-top: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__inicio {
+    margin-top: 10px;
+}
+
+.inicio {
+    color: #85BFD1;
+}
+
+@media screen and (max-width:1155px) {
+    .container {
+        width: 1095px;
+    }
+}
+
+@media screen and (max-width:1154px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .container {
+        width: 720px;
+    }
+
+    .hobby__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us__block {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__text {
+        margin-top: 30px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    
+    .menu {
+        z-index: 10;
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        position: relative;
+        bottom: 40px;
+        left: 16px;
+    }
+
+    .menu span,
+    .menu::before,
+    .menu::after {
+        position: absolute;
+        height: 1px;
+        width: 20px;
+        background-color: #fff;
+        transition: all .3s ease 0s;
+    }
+
+    .menu::before,
+    .menu::after {
+        content: "";
+    }
+
+    .menu::after {
+        top: 50px;
+        right: 30px;
+    }
+
+    .menu::before {
+        top: 35px;
+        right: 30px;
+    }
+
+    .menu span {
+        top: 43px;
+        transform: scale(1) translate(0px 100%);
+        right: 30px;
+    }
+
+    .menu.active span {
+        display: none;
+    }
+
+    .menu.menu.active::before {
+        top: 39px;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .menu.menu.active::after {
+        top: 39px;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #171718;
+        transform: translate(-100%, 0px);
+        display: flex;
+        flex-direction: column;
+        padding: 50px  0px;
+        transition: left .3s ease 0s;
+        overflow: auto;
+    }
+
+    .nav.active {
+        left: 100%;
+    }
+
+    .nav::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 70px;
+        z-index: 2;
+        background-color: #171718;
+    }
+
+    .link__nav {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        width: 540px;
+    }
+
+    .about_us__title {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .container {
+        width: 470px;
+    }
+
+    .about_us__title {
+        width: 95%;
+    }
+
+    
+}

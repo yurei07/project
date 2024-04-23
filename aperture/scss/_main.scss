@@ -1,0 +1,128 @@
+.main {
+    .main-block-title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        .main-block-text {
+            font-size: 18px;
+        }
+    }
+    .main-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .mani-block-block {
+            margin: 12px 12px;
+            .main-block-block-text {
+                font-weight: 300;
+                position: absolute;
+                margin: -270px 25px;
+                .main-block-block-text-text {
+                    width: 500px;
+                }
+                .main-block-block-text-button {
+                    margin-top: 15px;
+                    @include Button;
+                    .bx {
+                        @include ButtonIcons;
+                    }
+                    .main-block-block-text-button-a {
+                        @include ButtonText;
+                    }
+                }
+            }
+        }
+    }
+    .main-background {
+        background:  url('../img/main/IMAGE\ \(5\).png') no-repeat center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        .main-backgoround-block {
+            padding: 19rem 0rem;
+            text-align: left;
+            .main-backgoround-block-text {
+                width: 400px;
+            }
+        }
+        .main-background-icons {
+            @include Icons;
+            .main-background-icons-color {
+                @include IconsColor;
+                .bx {
+                    @include IconsBx;
+                }
+            }
+        }
+    }
+
+    .main-clients {
+        margin: 13rem 0;
+        .main-clients-block {
+            text-align: center;
+            .main-clients-block-title {
+                font-size: 30px;
+            }
+        }
+        .main-clients-flex {
+            margin-top: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    .main-about {
+        background: url('../img/main/IMAGE\ \(7\).png') center no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        .main-about-block {
+            padding: 16rem 0;
+            width: 500px;
+            .main-about-block-button {
+                @include Button;
+                .main-about-block-button-a {
+                    @include ButtonText;
+                }
+                .bx {
+                    @include ButtonIcons;
+                }
+            }
+        }
+        .main-about-icons {
+            @include Icons;
+            .main-about-icons-color {
+                @include IconsColor;
+                .bx {
+                    @include IconsBx;
+                }
+            }
+        }
+    }
+
+    .main-footer {
+        margin: 13rem 0;
+        .main-footer-container {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            .main-footer-block {
+                text-align: center;
+                .main-footer-block-title {
+                    font-size: 30px;
+                }
+            }
+            .main-footer-button {
+                margin: 2rem 14.3rem;
+                @include Button;
+                .main-footer-button-a {
+                    @include ButtonText;
+                }
+                .bx {
+                    @include ButtonIcons;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+@mixin title {
+	background-color: #2aa5a0;
+	background-image: linear-gradient(
+		45deg,
+		$color-gradient-title-1,
+		$color-gradient-title-2
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin arrow {
+	&:before {
+		content: "";
+		position: absolute;
+		width: 4px;
+		height: 4px;
+		background-color: $color-gradient-title-1;
+		bottom: 67px;
+		left: 38px;
+		display: block;
+	}
+	& a {
+		position: relative;
+		width: 70px;
+		height: 4px;
+		background-image: linear-gradient(
+			90deg,
+			$color-gradient-title-1,
+			$color-gradient-title-2
+		);
+		display: block;
+		transform: rotate(90deg);
+	}
+	& a::after {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 4px;
+		top: -5.3px;
+		right: -8px;
+		border-radius: 5px;
+		background-color: $color-gradient-title-2;
+		transform: rotate(45deg);
+	}
+	& a::before {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 4px;
+		top: 5.3px;
+		right: -8px;
+		border-radius: 5px;
+		background-color: $color-gradient-title-2;
+		transform: rotate(-45deg);
+	}
+}
+
+@mixin button {
+	border: none;
+	background: none;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	a {
+		text-decoration: none;
+		color: $color-link-and-button-1;
+	}
+	i {
+		margin: 0px 0px 0px 10px;
+		font-size: 40px;
+		color: $color-link-and-button-2;
+	}
+}

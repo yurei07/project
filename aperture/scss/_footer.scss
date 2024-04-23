@@ -1,0 +1,18 @@
+.footer {
+    .footer-flex {
+        display: flex;
+        justify-content: space-around;
+        .footer-block {
+            .footer-block-title {
+                padding: 0px 35px;
+            }
+            .footer-block-ul {
+                list-style: none;
+                .footer-block-ul-li {
+                    font-weight: 300;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

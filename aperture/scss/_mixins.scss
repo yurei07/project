@@ -1,0 +1,55 @@
+@mixin Button {
+    background: none;
+    border: none;
+}
+
+@mixin ButtonText {
+    background: $color-title;
+    border: $color-title 1px solid;
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: $color-bg;
+    text-decoration: none;
+    transition: all .5s;
+
+    &:hover {
+        background: none;
+        color: $color-title;
+    }
+}
+
+@mixin ButtonIcons {
+    cursor: pointer;
+    color: $color-bg;
+    font-size: 1.7rem;
+    position: absolute;
+    margin-top: -5px;
+}
+
+@mixin Icons {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    padding-top: .5rem;
+}
+
+@mixin IconsColor {
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    font-weight: 300;
+    transition: color .5s;
+    cursor: pointer;
+    
+    &:hover {
+        color: $color-title;
+    }
+}
+
+@mixin IconsBx {
+    font-size: 1.5rem;
+
+    &:hover {
+        color: $color-title;
+    }
+}      

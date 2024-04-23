@@ -1,0 +1,47 @@
+.program {
+	margin: 220px 0px 0px 0px;
+	.program__images {
+		z-index: -1;
+		position: absolute;
+		margin: 150px 0px 0px 0px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		&::after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		div:nth-child(1) {
+			float: left;
+			width: 100%;
+			margin-right: -100%;
+			position: relative;
+			z-index: -1;
+		}
+		div:nth-child(2) {
+			float: left;
+			width: 50%;
+			margin: 5.5% 0% 0% 75%;
+			z-index: 2;
+		}
+	}
+	.program__text {
+		width: 500px;
+		padding-top: 18%;
+		h2 {
+			color: $color-title-and-header;
+			font-size: 50px;
+			font-weight: 400;
+			z-index: 10;
+		}
+		p {
+			width: 425px;
+			margin: 30px 0px 30px 0px;
+			text-align: left;
+			color: $color-text;
+		}
+		button {
+			@include button;
+		}
+	}
+}
